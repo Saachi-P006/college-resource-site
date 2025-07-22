@@ -1,0 +1,40 @@
+/* Center the form and add a border */
+form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color:lightseagreen;
+}
+
+/* Align labels to the left */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Add spacing between inputs */
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+button {
+    background-color: #4a54e1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333 ;
+}

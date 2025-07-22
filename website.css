@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #EDE8D5;
+}
+
+:root{
+     --primary-color: #edf2fc;
+    --secondary-color: #212121; 
+}
+
+body,html{
+    width: 1521px;
+    min-height: 100vh;
+    background-color: #EDE8D5;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin: 1rem;
+    background: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: bold;
+    position: sticky;
+}
+
+.box {
+    width: 100%; 
+    height: 55px;
+    position: sticky;
+    top: 0;
+    visibility: hidden;
+}
+
+nav {
+    border: 3px solid var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background: linear-gradient(to bottom,gold, var(--primary-color));
+    z-index: 1000;
+  }
+  
+nav button {
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    width:230px;
+  }
+  
+ nav button:hover {
+    background:#ADAEB3;
+  }
+  
+button {
+    width:270px;
+    border-radius: 5px;
+}
+
+.hero{
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    line-height: 2.0;
+    position: relative;
+    flex-direction: column;
+    max-width: 50%;
+    margin-top:5px;
+    margin-left: 10px;
+}
+
+img{
+    margin: 0 auto;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    background: #EDE8D5 ;
+    background-repeat: no-repeat;
+}
+
+.image img{
+    width: 70px;
+    height: auto; 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+}
+
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: auto auto;          
+    gap: 50px;
+    justify-content: center; 
+    margin-top: 150px;                
+}
+
+.square {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: none;
+    border:3px solid brown;
+    background-color:#FBD1D1;
+}
+
+.square:nth-child(1){
+    margin-left: -60px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.square:nth-child(1) h1{
+    margin-top:150px;
+    text-align: center;
+    background: none;
+    margin-left: -37px;
+}
+.square:nth-child(1) button {
+    background: #f7e40f;
+    width: 100px;
+    margin-top: 250px;
+    margin-left: -145px;
+    height: 5vh;
+    width: -10vh;
+    border-radius: 7px;
+}
+
+.square:nth-child(2){
+    grid-column: 3;
+    grid-row: 1;
+}
+.square:nth-child(2) h1{
+    margin-top: 135px;
+    text-align: center;
+    background: none;
+}
+.square:nth-child(2) button{
+    background: #f7e40f;
+    width: 100px;
+    margin-top: 250px;
+    margin-left: -83px;
+    height: 5vh;
+    width: -10vh;
+    border-radius: 7px;
+}
+
+.square:nth-child(3) {
+    margin-left: -140px;
+    grid-column: 5;
+    grid-row: 1;
+}
+.square:nth-child(3) h1{
+    margin-top: 150px;
+    text-align: center;
+    background: none;
+}
+.square:nth-child(3) button{
+    background: #f7e40f;
+    width: 100px;
+    margin-top: 250px;
+    margin-left: -155px;
+    height: 5vh;
+    width: -10vh;
+    border-radius: 7px;
+}
+
+.square:nth-child(4){
+    margin-left: -70px;
+    margin-top: 30px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.square:nth-child(4) h1{
+    text-align: center;
+    background: none;
+    margin-top: 175px;
+}
+.square:nth-child(4) button{
+    background: #f7e40f;
+    width: 100px;
+    margin-top: 257px;
+    margin-left: -120px;
+    height: 5vh;
+    width: -10vh;
+    border-radius: 7px;
+}
+
+.square:nth-child(5) {
+    margin-top: 30px;
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+}
+.square:nth-child(5) h1{
+    margin-top: 180px;
+    background: none;
+    text-align: center;
+    margin-right: 280px;
+}
+.square:nth-child(5) button{
+    background: #f7e40f;
+    width: 100px;
+    margin-top: 270px;
+    margin-left: -370px;
+    height: 5vh;
+    width: -10vh;
+    border-radius: 7px;
+}
+
+.logo1 img{
+    background: none;
+    width:190px;
+    margin-top: 785px;
+    margin-right: 1060px;
+}
+
+.logo2 img{
+    background: none;
+    width: 370px;
+    margin-top: 785px;
+    margin-right: 610px;
+}
+
+.logo3 img{
+    background: none;
+    width:220px;
+    margin-top: 1270px;
+    margin-right: 920px;
+}
+
+.logo4 img{
+    background: none;
+    width: 240px;
+    margin-top: 780px;
+    margin-right: 320px;
+}
+
+.logo5 img{
+    background: none;
+    width:240px;
+    margin-top: 1260px;
+    margin-right: 520px;
+}
+
+.border {
+    background: var(--secondary-color);
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.border h1{
+    color: var(--primary-color);
+    margin-top: 7px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contact1 img {
+    background: none;
+    margin-top: 1760px;
+    width: 40px;
+    height: 40px;
+    margin-right: 710px;
+}
+
+.contact2 img{
+    background: none;
+    margin-top: 1765px;
+    width:30px;
+    height: 30px;
+    margin-right: 775px;
+}
+
+.contact1, .contact2 {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content; /* Keeps the size just around the image */
+    height: fit-content;
+}
+
+.contact1 button, .contact2 button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+.border h1 {
+    color: var(--primary-color);
+    margin-top: 55px;
+    margin-right: 60px;
+    margin-bottom: 0rem;
+}
+
+.border button{
+    margin-top: 15px;
+    margin-left: 690px;
+    height: 5vh;
+    width: 7vw;
+    background: lightseagreen;
+}
+
+.square {
+    transition: all 0.3s ease-in-out;
+  }
+  
+.square:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8)
+}
+
+.quote-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fbd3e9, #bb377d);
+    color: #000;
+    max-width: 600px;
+}
+
+.quote-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quote-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    font-weight: 700;
+    color:#301934;
+    font-size:larger;
+}
+
+.quote-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quote-section button:hover {
+    background: #ffd700;
+}
+
+@media (max-width: 600px) {
+    body,html {
+        width: 100%;
+    }
+}

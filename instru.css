@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right,#2664BE,#4F8FC0,#53D2DC,#FFE3B3);
+}
+
+.year-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.year-box {
+    background: aliceblue;
+    color: black;
+    border: 3px dashed olivedrab;
+    padding: 20px;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s forwards;
+}
+.year-box h2 {
+    margin-bottom: 20px;
+}
+
+.year-box button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #F14666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.year-box button:hover {
+    background-color: #005fa3;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.8s step-end infinite;
+  }
+  @keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
